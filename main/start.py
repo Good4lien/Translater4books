@@ -4,7 +4,7 @@ from yandex_translate import YandexTranslate
 
 
 def translate(word):
-    key = 'trnsl.1.1.20180709T094228Z.c8c944f05e9d5ff1.aecb0458d185c3588404b25731a72a199bd68e4e'
+    key = '*'
     translate = YandexTranslate(key)
     trans=translate.translate(word, 'ru').get('text')[0].__str__()
     return trans
